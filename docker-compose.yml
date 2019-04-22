@@ -1,0 +1,41 @@
+version: '3'
+services:
+
+  mysql:
+   image: mysql:5.5
+   network_mode: host
+   restart: always
+   ports:
+     - "3306:3306"
+   environment:
+     MYSQL_ROOT_PASSWORD: root
+     MYSQL_DATABASE: jobdb
+
+  user:
+   image: pawanjaiswal/muse:muse-user
+   restart: always
+   network_mode: host
+   ports:
+     - "1111:1111"
+   expose:
+     - "1111"
+   depends_on:
+     - mysql
+
+  spring:
+   image: pawanjaiswal/muse:muse-spring
+   restart: always
+   network_mode: host
+   ports:
+     - "1112:1112"
+   expose:
+     - "1112"
+   depends_on:
+     - mysql
+  
+  angular:
+    image: pawanjaiswal/muse:muse-angular
+    network_mode: host
+    container_name: angular-docker
+    ports:
+      - "4200:4200"

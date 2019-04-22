@@ -1,0 +1,109 @@
+.header-filter {
+    position: relative;
+}
+h1,h4{
+    color: #fff;
+}
+.page-header {
+    height: 100vh;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+    top: -900px;
+    z-index: -1;
+}
+.header-filter:before {
+    background: rgba(0,0,0,.5);
+}
+.header-filter:after, .header-filter:before {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+}
+.header-filter .container {
+    z-index: 2;
+    position: relative;
+}
+.main-raised {
+    margin: -800px 30px 0;
+    border-radius: 6px;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+}
+.main {
+    background: #fff;
+    position: relative;
+    z-index: 3;
+}
+.block .container {
+    padding: 0;
+}
+.job-listings-sec {
+    float: left;
+    width: 100%;
+}
+.job-list-modern {
+    margin: 0;
+    margin-top: 0px;
+    -webkit-border-radius: 0 0;
+    -moz-border-radius: 0 0;
+    -ms-border-radius: 0 0;
+    -o-border-radius: 0 0;
+    border-radius: 0 0;
+    border-left-color: #ffffff;
+    border-right-color: #ffffff;
+    border-top-color: #edeff7;
+    border-bottom-color: #edeff7;
+    margin-top: -1px;
+    padding: 30px 0px;
+}
+footer {
+    padding: .9375rem 0;
+    text-align: center;
+    display: flex;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.float-left {
+    float: left!important;
+}
+footer ul {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+}
+footer ul li {
+    display: inline-block;
+}
+footer ul li a, footer ul li a:hover {
+    text-decoration: none;
+}
+footer ul li a {
+    color: inherit;
+    padding: .9375rem;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    position: relative;
+    display: block;
+}
+footer .copyright {
+    padding: 15px 0;
+}
+.float-right {
+    float: right!important;
+}

@@ -1,0 +1,12 @@
+<span>Update the alert for the Movie {{data.obj.name}} </span>
+<h4 mat-dialog-title>{{data.obj.name}}</h4>
+<div mat-dialog-content>
+  <p>Alert</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="alert">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button color='warn' (click)="onNoClick()">Cancel</button>
+  <button mat-button color='warn' (click)="updateComments()" >Update</button>
+</div>

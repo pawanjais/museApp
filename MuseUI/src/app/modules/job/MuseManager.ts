@@ -1,0 +1,24 @@
+export class MuseManager
+{
+    r_id:number;
+    id:string;
+    type:string;
+    name:string;
+    contents:string;
+    publication_date:string;
+    alert:string;
+    userId:string;
+    locations:
+    {
+        name:string
+    }
+    categories:
+    {
+        name:string;
+    }
+    company:
+    {
+        id:string;
+        name:string;
+    }
+}

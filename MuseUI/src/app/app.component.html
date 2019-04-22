@@ -1,0 +1,44 @@
+<mat-toolbar color="primary" class="mat-elevation-z2 ind">
+    <mat-toolbar-row>
+        <span><img src="../assets/logo.png" style="padding-right:10px;"></span>
+        <span>Job Hunter</span>
+        <span class="example-spacer"></span>
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">verified_user</mat-icon>
+        <div *ngIf="!status; else dash">
+            <button mat-button [routerLink]="['/login']">Sign In</button>
+            <button class="register-button" mat-button [routerLink]="['/register']">Sign Up</button>
+        </div>
+        <ng-template #dash>
+            <button mat-button [routerLink]="['/job/all']">Home</button>
+            <button mat-button [routerLink]="['/job/bookmark']">Bookmark</button>
+            <button class="search-button" mat-button [routerLink]="['/job/search']">Search</button>
+            <button mat-button (click)="Logout()">Sign Out</button>
+        </ng-template>
+
+    </mat-toolbar-row>
+</mat-toolbar>
+<div *ngIf="status;then job; else login"></div>
+<ng-template #login>
+    <section>
+        <div class="block no-padding">
+            <div class="container fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="main-featured-sec">
+                            <div class="new-slide-3">
+                                <img src="./assets/vector-4.png" style="top: 134.28px; right: 9.55px;">
+                            </div>
+                            <router-outlet></router-outlet>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</ng-template>
+<ng-template #job>
+    <router-outlet></router-outlet>
+</ng-template>

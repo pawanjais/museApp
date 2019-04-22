@@ -1,0 +1,54 @@
+.example-icon {
+  padding: 0 14px;
+}
+.ind{
+    z-index: 5;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar-row{
+    height: 80px !important;
+}
+
+.block.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.block {
+    float: left;
+    top: -80px;
+    padding: 60px 0;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+.block .container {
+    padding: 0;
+}
+.container.fluid {
+    max-width: 100%;
+    width: 100%;
+}
+.main-featured-sec {
+    float: left;
+    width: 100%;
+    z-index: 1;
+}
+.new-slide-3 {
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    background: #f4f5fa;
+}
+.new-slide-3 img {
+    position: absolute;
+    top: 15%;
+    right: 0px;
+    opacity: 0.9;
+}
+
+

@@ -1,0 +1,213 @@
+.header-filter {
+    position: relative;
+}
+h1,h4{
+    color: #fff;
+}
+.page-header {
+    height: 100vh;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+    top: -750px;
+    z-index: -1;
+}
+.header-filter:before {
+    background: rgba(0,0,0,.5);
+}
+
+.header-filter:after, .header-filter:before {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+}
+.main-raised {
+    margin: -540px 30px 0;
+    border-radius: 6px;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+}
+.main {
+    background: #fff;
+    position: relative;
+    z-index: 3;
+}
+.mat-form-field {
+    width: 84%;
+}
+.block .container {
+    padding: 0;
+}
+
+.widget {
+    float: left;
+    width: 100%;
+}
+
+.widget > h3 {
+    float: left;
+    margin: 0;
+    font-size: 18px;
+    color: #202020;
+    font-weight: 500;
+}
+.job-listings-sec {
+    float: left;
+    width: 100%;
+}
+.job-list-modern .job-listing.wtabs {
+    margin: 0;
+    margin-top: 0px;
+    -webkit-border-radius: 0 0;
+    -moz-border-radius: 0 0;
+    -ms-border-radius: 0 0;
+    -o-border-radius: 0 0;
+    border-radius: 0 0;
+    border-left-color: #ffffff;
+    border-right-color: #ffffff;
+    border-top-color: #edeff7;
+    border-bottom-color: #edeff7;
+    margin-top: -1px;
+    padding: 30px 0px;
+}
+.job-listing.wtabs {
+    border: 1px solid #ebefef;
+    margin-top: 30px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    display: inherit;
+    text-align: left;
+    position: relative;
+}
+.job-listing.wtabs .job-title-sec {
+    width: 70%;
+}
+.c-logo {
+    float: left;
+    width: 130px;
+    text-align: center;
+}
+.job-title-sec h3 {
+    display: table;
+    font-size: 18px;
+    color: #232323;
+    margin: 0;
+    margin-bottom: 0px;
+    margin-bottom: 7px;
+    margin-top: 3px;
+}
+.job-listing.wtabs .job-title-sec > span {
+    color: #1e83f0;
+    display: table;
+    float: none;
+}
+.job-listing.wtabs .job-lctn {
+    display: inline;
+    padding-top: 20px;
+    width: 100%;
+    font-size: 13px;
+}
+.job-style-bx {
+    float: left;
+    width: 30%;
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    padding: 15px;
+}
+.job-list-modern .job-listing.wtabs .job-style-bx {
+    padding-bottom: 31px;
+    bottom: 50%;
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+    transform: translateY(50%);
+}
+.job-is.ft, .job-list-modern .job-is.ft {
+    color: #8b91dd;
+    border-color: #8b91dd;
+}
+.job-style-bx .fav-job {
+    font-size: 20px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.job-style-bx > i {
+    position: absolute;
+    right: 16px;
+    bottom: 0;
+    font-style: normal;
+    font-size: 13px;
+    color: #888888;
+}
+.ft {
+    background: none;
+    border-top: 1px solid #eaeeee;
+    margin-top: 60px;
+}
+
+.job-is {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Open Sans;
+    font-size: 12px;
+    border: 1px solid;
+    float: right;
+    padding: 7px 0;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    width: 108px;
+    margin: 9px 0;
+    text-align: center;
+}
+footer {
+    padding: .9375rem 0;
+    text-align: center;
+    display: flex;
+}
+.float-left {
+    float: left!important;
+}
+footer ul {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+}
+footer ul li {
+    display: inline-block;
+}
+footer ul li a, footer ul li a:hover {
+    text-decoration: none;
+}
+footer ul li a {
+    color: inherit;
+    padding: .9375rem;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    position: relative;
+    display: block;
+}
+footer .copyright {
+    padding: 15px 0;
+}
+.float-right {
+    float: right!important;
+}

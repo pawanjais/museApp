@@ -1,0 +1,46 @@
+
+.job-search-sec {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    width: 350px;
+    content: "";
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    margin-top: 0px;
+}
+.job-search {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 50px;
+}
+.job-search form {
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.card-header{
+    margin-top: -60px;
+    margin-left: 15px;
+    width: 90%;
+    background-color: #ab47bc;
+}
+
+
+.mat-card-header {
+    background-color: #ab47bc;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin-top: -47px !important;
+}
+
+.row{
+    padding-left: 20px;
+}
